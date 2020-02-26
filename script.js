@@ -5,7 +5,7 @@ const loading = '<h1 class="loader">Loading...</h1>'
 const showImages = () => {
     // Show loading text if no data
     if (image_container.children.length === 0) image_container.innerHTML = loading
-    fetch(`https://api.unsplash.com/users/baciutudor/photos?per_page=10&page=7&client_id=09858877bb2538e70eac2d6d50a1fee25311837a5591af779de312869ecda475`)
+    fetch(`https://api.unsplash.com/users/baciutudor/photos?per_page=10&page=8&client_id=09858877bb2538e70eac2d6d50a1fee25311837a5591af779de312869ecda475`)
       .then(res => {
         res.json().then(images => {
           // Call the function to create the gallery
